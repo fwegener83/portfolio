@@ -15,13 +15,52 @@
     <script src="js/bootstrap.min.js"></script>
 
     <title>Florian Wegener - Portfolio</title>
+
+    <!--Google Analytics -->
+    <script type="text/javascript">
+		var gaProperty = 'UA-91481022-1';
+		var disableStr = 'ga-disable-' + gaProperty;
+		if (document.cookie.indexOf(disableStr + '=true') > -1) {
+		window[disableStr] = true;
+		}
+		function gaOptout() {
+		document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+		window[disableStr] = true;
+		}
+		</script> 
+
+    <!--Enable-->
+
+    <!--Tracking Code-->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-91481022-1', 'auto');
+	  ga('send', 'pageview');
+
+	  var _gaq = _gaq || [];
+		_gaq.push (['_setAccount', 'UA-91481022-1']);
+		_gaq.push (['_gat._anonymizeIp']);
+		_gaq.push (['_trackPageview']);
+
+</script>
+
+
+    <!--GA END-->
+
+
+
+
   </head>
 
   <body>
     <div class="container">
       <div class="row text-uppercase">
         <div class="col-md-2">
-          <img class="header-image" src="images/avatar.png" width="101" height="100" alt="Florian Wegener" data-toggle="modal" data-target="#aboutMe">
+          <img class="header-image" src="images/avatar.png" width="101" height="100" alt="Florian Wegener" data-toggle="modal" data-target="#aboutme">
         </div>
         <div class="col-md-10 text-right">
           <h1>Florian Wegener</h1>
@@ -141,17 +180,6 @@
 
     <footer class="text-center">
 
-    <!--
-      <a href="https://twitter.com/" target="_blank">
-        <img src="images/twitter.png" width="24" height="24" alt="twitter">
-      </a>
-
-      <a href="https://plus.google.com/" target="_blank">
-        <img src="images/google.png" width="24" height="24" alt="google+">
-      </a>
-
-      -->
-
       <a href="https://www.linkedin.com/in/florian-wegener-924806a6/" target="_blank">
         <img src="images/linkedin.png" width="24" height="24" alt="linkedIn">
       </a>
@@ -159,6 +187,10 @@
       <a href="https://www.xing.com/profile/Florian_Wegener2" target="_blank">
         <img src="images/xing.png" width="24" height="24" alt="linkedIn">
       </a>
+
+       <p>
+     	<a href="datenschutz.html">Imprint / Data Privacy Statement (Datenschutzerklärung) </a>
+       </p>
 
       <p>
         Icons made by Elegant Themes, SimpleIcon from
@@ -169,7 +201,8 @@
         <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
           CC BY 3.0
         </a>
-      </p>
+       </p>
+
      
     </footer>
 
@@ -245,22 +278,7 @@
       </div>
     </div>
 
-    <div class="modal fade" id="rails" tabindex="-1" role="dialog" aria-labelledby="railsModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-uppercase text-center" id="railsModalLabel">Hier könnte ihre Beschreibung stehen</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive modal-image" src="images/busy.jpg" width="568" height="379" alt="Hier könnte ihre Beschreibung stehen">
-            Hier könnte ihre Beschreibung stehen
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="modal fade" id="python" tabindex="-1" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -279,18 +297,16 @@
       </div>
     </div>
 
-
-    <div class="modal fade" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+    <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="froggerModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title text-uppercase text-center" id="aboutMeModalLabel">About Me</h4>
+            <h4 class="modal-title text-uppercase text-center" id="froggerModalLabel">Online Portfolio</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive modal-image" src="images/avatar.jpg" width="568" height="379" alt="Hier könnte ihre Beschreibung stehen">
-            <p>
-              Etwas über mich
-            </p>
+            <img class="img-responsive modal-image" src="images/busy.jpg" width="568" height="384" alt="A screenshot of my online frogger game">
+            In progress. Click
+            <a href="http://www.florian-wegener.de" target="_blank">here</a>.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -298,6 +314,11 @@
         </div>
       </div>
     </div>
+
+
+    
+
+    
 
   </body>
 </html>
